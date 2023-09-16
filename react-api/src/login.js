@@ -52,13 +52,13 @@ const Login = () => {
                             <h1 className='text-center mb-4 text-uppercase fw-bold d-inline-flex fw-bold border-bottom border-primary border-4'>Login</h1>
                         </div>
                         <form onSubmit={handleSubmit} className='p-5 shadow rounded-4'>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput1" placeholder="name@example.com" value={name.email} onChange={e => setName({ ...name, email: e.target.value })} />
-                                <label for="floatingInput1">Email</label>
+                            <div className="form-floating mb-3">
+                                <input type="email" className="form-control" id="floatingInput1" placeholder="name@example.com" value={name.email} onChange={e => setName({ ...name, email: e.target.value })} />
+                                <label htmlFor="floatingInput1">Email</label>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingInput2" placeholder="name@example.com" value={name.password} onChange={e => setName({ ...name, password: e.target.value })} />
-                                <label for="floatingInput2">Password</label>
+                            <div className="form-floating mb-3">
+                                <input type="password" className="form-control" id="floatingInput2" placeholder="name@example.com" value={name.password} onChange={e => setName({ ...name, password: e.target.value })} />
+                                <label htmlFor="floatingInput2">Password</label>
                             </div>
                             <div className='d-flex align-items-center gap-2 mb-2'>
                                 <p className='small'>Not reistered yet? <Link to="/register" className='text-decoration-none fw-semibold text-uppercase border-bottom border-2 border-dark'>Register</Link ></p>
